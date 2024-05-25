@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bernard Rybołowicz, PhD</h1>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="past-talks.html">Past Events</a></li>
+                <li><a href="papers.html">Papers</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <section id="about-me">
+        <div class="content">
+        
+            <h2>About Me</h2>
+            
+<p>Welcome to my website! My name is Bernard Rybołowicz, and I am a research associate at Heriot-Watt University and Maxwell institute of Mathematical Sciences. Currently, my research focuses on studying the set-theoretic Yang-Baxter equation and its connection with various algebraic structures under the supervision of Prof. Anastasia Doikou.
+</p>
+ 
+<p>
+I earned my PhD at Swansea University, where, under the supervision of Prof. Tomasz Brzeziński, I studied trusses and their connections to ring theory.
+</p>
+
+<p>
+I am always happy to diversify my skills and learn new things.
+</p>
+
+<p>
+If you like to learn more about my research or are interested in collaborating with me, please don't hesitate to reach out.</p> 
+<h2>Current interest</h2>
+ <button onclick="randomizeList()">Show the current order</button>
+<ul id="myList">
+<li>Universal algebra (mainly ternary structures)</li>
+<li>Affine geometry</li>
+<li>Semigroup theory</li>
+<li>Integrable systems</li>
+<li>Category theory</li>
+</ul>
+
+
+    <script>
+        function randomizeList() {
+            const list = document.getElementById('myList');
+            const items = Array.from(list.getElementsByTagName('li'));
+            const shuffledItems = items.sort(() => Math.random() - 0.5);
+
+            // Remove all existing items
+            while (list.firstChild) {
+                list.removeChild(list.firstChild);
+            }
+
+            // Append shuffled items
+            shuffledItems.forEach(item => {
+                list.appendChild(item);
+            });
+        }
+    </script>
+            <h2>Contact me</h2>
+            <p>
+
+Office address: Office Address: G.19 Colin Maclaurin Building, Heriot-Watt University Edinburgh Campus, First Gait, Currie EH14 4AS.</p>
+
+<p>E-mail: <a href="mailto:B.Rybolowicz@hw.ac.uk">B.Rybolowicz(at)hw.ac.uk</a></p>
+            </div>
+         <aside class="news">
+            <h3>Will be there</h3>
+            <div class="news-bubble">
+                <div class="news-item">3 - 7 June 2024, Algebraic structures in the Yang-Baxter equation, Heriot-Watt University, Edinburgh</div>
+            </div>
+              <h3>Links to profiles</h3>
+              <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1255870"><img alt="Static Badge" src="https://img.shields.io/badge/MathSciNet-1255870-white"></a>
+              <a href="https://orcid.org/0000-0002-2894-8288"><img alt="Static Badge" src="https://img.shields.io/badge/ORCID-lightgreen"></a>
+               <a href="https://researchportal.hw.ac.uk/en/persons/bernard-rybolowicz"><img alt="Static Badge" src="https://img.shields.io/badge/Heriot%20Watt-blue"></a>
+                <a href="https://www.researchgate.net/profile/Bernard-Rybolowicz"> <img alt="Static Badge" src="https://img.shields.io/badge/Research%20Gate-%2300CCBB"></a>
+                 <a href="https://arxiv.org/search/?searchtype=author&query=Rybolowicz%2C+B"><img alt="Static Badge" src="https://img.shields.io/badge/arXiv-Rybolowicz-rgb(179%2C%2027%2C%2027)"></a>
+              
+        </aside>
+    
+            
+    </section>
+
+
+</body>
+</html>
