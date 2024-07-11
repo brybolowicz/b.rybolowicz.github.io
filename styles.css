@@ -153,6 +153,7 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 1em;
     height: auto;
+    margin-top: 20px;
 }
 
 /* Individual News Item */
